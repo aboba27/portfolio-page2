@@ -1,1 +1,57 @@
-
+body {
+    font-family: "Montsserrat";
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: black;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  header,
+  section,
+  footer {
+    padding: 20px;
+  }
+  
+  header {
+    width: 70vw;
+    padding-top: 80px;
+    padding-bottom: 0px;
+    display: flex;
+    align-items: flex-end;
+    margin: 0 auto;
+    transition: opacity 1.5s ease-in-out;
+    z-index: 1000;
+  }
+  
+  .content {
+    width: 70vw;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 0px;
+  }
+  
+  .content-title {
+    font-size: 44px;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  .content-desc {
+    margin-top: 0px;
+  }
