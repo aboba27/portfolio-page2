@@ -27,6 +27,21 @@ body {
     z-index: 1000;
   }
   
+  .nav-items {
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+  }
+  
+  .nav-items a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .nav-items a:hover {
+    color: gray;
+  }
+  
   .content {
     width: 70vw;
     height: 100vh;
@@ -55,3 +70,4 @@ body {
   .content-desc {
     margin-top: 0px;
   }
+  
