@@ -40,10 +40,31 @@
 
     <section class="content" id="about-me">
       <h1 class="content-title">Abdallah Abobaker</h1>
+      <p class="content-desc">
+        Abdallah ist mein Name. Ich bin 25 Jahre alt und habe vielfältige
+        kulturelle Wurzeln. Geboren wurde ich in Tripolis, der Hauptstadt
+        Libyens. Schon mit einem Jahr kam ich in die Schweiz. Bern, eine Stadt
+        voller Kultur und Geschichte, wurde mein zuhause. Dort erlebte ich
+        prägende Jahre und genoss eine Bildung, die mich förderte. Neben dem
+        Studium und der Arbeit gebe ich mich meinen Hobbys hin. Kampfsport hilft
+        mir, Stress abzubauen und fördert meine Zielstrebigkeit. Reisen
+        erweitert meinen Blick und meine Neugier auf neue Kulturen. Familie
+        bedeutet mir viel. Besonders geniesse ich die Zeit mit meinen Nichten.
+        Diese Momente sind meine Quelle der Kraft und Inspiration.
+      </p>
     </section>
 
     <section class="content" id="experience">
       <h2>Berufserfahrung</h2>
+      <p>
+        An der Wirtschaftsmittelschule in La Neuveville in der
+        Französischschweiz, festigte ich mein Wissen in Wirtschaft. Mein
+        Französisch verbesserte sich dort erheblich. Der Wunsch nach mehr Wissen
+        trieb mich zur Berufsmaturitätsschule. Danach begann ich an der Berner
+        Fachhochschule zu studieren. Ich studiere Vollzeit und arbeite
+        gleichzeitig flexibel. Meine Einsätze liegen oft im IT-Bereich. Sie
+        bringen mir wertvolle Erfahrungen und fördern meine Fähigkeiten.
+      </p>
     </section>
 
     <section class="content" id="skills">
@@ -73,5 +94,20 @@
         </div>
       </div>
     </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", (event) => {
+        const header = document.querySelector("header");
+
+        window.addEventListener("scroll", () => {
+          if (window.pageYOffset > 0) {
+            // Page is scrolled down
+            header.classList.add("header-hidden");
+          } else {
+            // Scrolled back to the top
+            header.classList.remove("header-hidden");
+          }
+        });
+      });
+    </script>
   </body>
 </html>
