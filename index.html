@@ -44,7 +44,7 @@
         Abdallah ist mein Name. Ich bin 25 Jahre alt und habe vielfältige
         kulturelle Wurzeln. Geboren wurde ich in Tripolis, der Hauptstadt
         Libyens. Schon mit einem Jahr kam ich in die Schweiz. Bern, eine Stadt
-        voller Kultur und Geschichte, wurde mein zuhause. Dort erlebte ich
+        voller Kultur und Geschichte, wurde mein zuhause. Dort verlebte ich
         prägende Jahre und genoss eine Bildung, die mich förderte. Neben dem
         Studium und der Arbeit gebe ich mich meinen Hobbys hin. Kampfsport hilft
         mir, Stress abzubauen und fördert meine Zielstrebigkeit. Reisen
@@ -69,6 +69,143 @@
 
     <section class="content" id="skills">
       <h2>Meine Fähigkeiten</h2>
+      <div class="skills-container">
+        <div class="skill">
+          <div class="loader-container">
+            <svg class="loader-svg" viewBox="0 0 36 36">
+              <path
+                class="loader-circle-bg"
+                d="M18 2.0845
+        a 15.9155 15.9155 0 0 1 0 31.831
+        a 15.9155 15.9155 0 0 1 0 -31.831"
+                fill="none"
+                stroke="#000"
+                stroke-width="1.5"
+              ></path>
+              <path
+                class="loader-circle"
+                stroke-dasharray="100, 100"
+                d="M18 2.0845
+        a 15.9155 15.9155 0 0 1 0 31.831
+        a 15.9155 15.9155 0 0 1 0 -31.831"
+                fill="none"
+                stroke="white"
+                stroke-width="1.5"
+              ></path>
+            </svg>
+            <div class="counter" data-percentage="80">0%</div>
+          </div>
+          <h3 class="skill-title">HTML</h3>
+        </div>
+        <div class="skill">
+          <div class="loader-container">
+            <svg class="loader-svg" viewBox="0 0 36 36">
+              <path
+                class="loader-circle-bg"
+                d="M18 2.0845
+        a 15.9155 15.9155 0 0 1 0 31.831
+        a 15.9155 15.9155 0 0 1 0 -31.831"
+                fill="none"
+                stroke="#000"
+                stroke-width="1.5"
+              ></path>
+              <path
+                class="loader-circle"
+                stroke-dasharray="100, 100"
+                d="M18 2.0845
+        a 15.9155 15.9155 0 0 1 0 31.831
+        a 15.9155 15.9155 0 0 1 0 -31.831"
+                fill="none"
+                stroke="white"
+                stroke-width="1.5"
+              ></path>
+            </svg>
+            <div class="counter" data-percentage="55">0%</div>
+          </div>
+          <h3 class="skill-title">CSS</h3>
+        </div>
+        <div class="skill">
+          <div class="loader-container">
+            <svg class="loader-svg" viewBox="0 0 36 36">
+              <path
+                class="loader-circle-bg"
+                d="M18 2.0845
+        a 15.9155 15.9155 0 0 1 0 31.831
+        a 15.9155 15.9155 0 0 1 0 -31.831"
+                fill="none"
+                stroke="#000"
+                stroke-width="1.5"
+              ></path>
+              <path
+                class="loader-circle"
+                stroke-dasharray="100, 100"
+                d="M18 2.0845
+        a 15.9155 15.9155 0 0 1 0 31.831
+        a 15.9155 15.9155 0 0 1 0 -31.831"
+                fill="none"
+                stroke="white"
+                stroke-width="1.5"
+              ></path>
+            </svg>
+            <div class="counter" data-percentage="35">0%</div>
+          </div>
+          <h3 class="skill-title">JS</h3>
+        </div>
+        <div class="skill">
+          <div class="loader-container">
+            <svg class="loader-svg" viewBox="0 0 36 36">
+              <path
+                class="loader-circle-bg"
+                d="M18 2.0845
+        a 15.9155 15.9155 0 0 1 0 31.831
+        a 15.9155 15.9155 0 0 1 0 -31.831"
+                fill="none"
+                stroke="#000"
+                stroke-width="1.5"
+              ></path>
+              <path
+                class="loader-circle"
+                stroke-dasharray="100, 100"
+                d="M18 2.0845
+        a 15.9155 15.9155 0 0 1 0 31.831
+        a 15.9155 15.9155 0 0 1 0 -31.831"
+                fill="none"
+                stroke="white"
+                stroke-width="1.5"
+              ></path>
+            </svg>
+            <div class="counter" data-percentage="100">0%</div>
+          </div>
+          <h3 class="skill-title">ChatGPT</h3>
+        </div>
+        <div class="skill">
+          <div class="loader-container">
+            <svg class="loader-svg" viewBox="0 0 36 36">
+              <path
+                class="loader-circle-bg"
+                d="M18 2.0845
+        a 15.9155 15.9155 0 0 1 0 31.831
+        a 15.9155 15.9155 0 0 1 0 -31.831"
+                fill="none"
+                stroke="#000"
+                stroke-width="1.5"
+              ></path>
+              <path
+                class="loader-circle"
+                stroke-dasharray="100, 100"
+                d="M18 2.0845
+        a 15.9155 15.9155 0 0 1 0 31.831
+        a 15.9155 15.9155 0 0 1 0 -31.831"
+                fill="none"
+                stroke="white"
+                stroke-width="1.5"
+              ></path>
+            </svg>
+            <div class="counter" data-percentage="100">0%</div>
+          </div>
+          <h3 class="skill-title">Office</h3>
+        </div>
+      </div>
     </section>
 
     <footer>
@@ -106,6 +243,35 @@
             // Scrolled back to the top
             header.classList.remove("header-hidden");
           }
+        });
+      });
+
+      // Skills loader
+      document.addEventListener("DOMContentLoaded", function () {
+        const skills = document.querySelectorAll(".skill");
+
+        skills.forEach((skill) => {
+          const counter = skill.querySelector(".counter");
+          const percentage = parseInt(counter.dataset.percentage, 10);
+          const loaderCircle = skill.querySelector(".loader-circle");
+          let count = 0;
+
+          // Trigger a reflow/repaint to restart the animation
+          loaderCircle.getBoundingClientRect();
+
+          // Animate the counter
+          const interval = setInterval(() => {
+            counter.textContent = `${count}%`;
+            if (count === percentage) {
+              clearInterval(interval);
+            }
+            count++;
+          }, 12);
+
+          // Animate the loader circle
+          const circumference = 100; // The full stroke-dasharray length
+          loaderCircle.style.strokeDashoffset =
+            circumference - (percentage / 100) * circumference;
         });
       });
     </script>
