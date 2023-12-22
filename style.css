@@ -193,10 +193,6 @@ footer .container .right .created-by {
   }
 }
 
-@media (max-width: 500px) {
-  .skills-container {
-  }
-}
 
 .content-title {
   font-size: 44px;
