@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mein Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="background.css" />
+    <link rel="stylesheet" href="header.css" />
   </head>
   <body>
     <div class="background">
@@ -30,7 +32,7 @@
       <span></span>
     </div>
 
-    <header>
+    <header class="normal-header">
       <div class="nav-items">
         <a href="#about-me">Über Mich</a>
         <a href="#experience">Lebenslauf</a>
@@ -38,20 +40,44 @@
       </div>
     </header>
 
-    <section class="content" id="about-me">
-      <h1 class="content-title">Abdallah Abobaker</h1>
-      <p class="content-desc">
-        Abdallah ist mein Name. Ich bin 25 Jahre alt und habe vielfältige
-        kulturelle Wurzeln. Geboren wurde ich in Tripolis, der Hauptstadt
-        Libyens. Schon mit einem Jahr kam ich in die Schweiz. Bern, eine Stadt
-        voller Kultur und Geschichte, wurde mein zuhause. Dort verlebte ich
-        prägende Jahre und genoss eine Bildung, die mich förderte. Neben dem
-        Studium und der Arbeit gebe ich mich meinen Hobbys hin. Kampfsport hilft
-        mir, Stress abzubauen und fördert meine Zielstrebigkeit. Reisen
-        erweitert meinen Blick und meine Neugier auf neue Kulturen. Familie
-        bedeutet mir viel. Besonders geniesse ich die Zeit mit meinen Nichten.
-        Diese Momente sind meine Quelle der Kraft und Inspiration.
-      </p>
+    <header class="burger-nav">
+      <div class="container">
+        <div id="burger">
+          <div class="line one"></div>
+          <div class="line two"></div>
+          <div class="line three"></div>
+        </div>
+
+        <div id="menu">
+          <ul>
+            <li><a href="#about-me">Über Mich</a></li>
+            <li><a href="#experience">Lebenslauf</a></li>
+            <li><a href="#skills">Meine Fähigkeiten</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <section class="content-portrait" id="about-me">
+      <div class="left">
+        <h1 class="content-title">Abdallah Abobaker</h1>
+        <p class="content-desc">
+          Abdallah ist mein Name. Ich bin 25 Jahre alt und habe vielfältige
+          kulturelle Wurzeln. Geboren wurde ich in Tripolis, der Hauptstadt
+          Libyens. Schon mit einem Jahr kam ich in die Schweiz. Bern, eine Stadt
+          voller Kultur und Geschichte, wurde mein zuhause. Dort erlebte ich
+          prägende Jahre und genoss eine Bildung, die mich förderte. Neben dem
+          Studium und der Arbeit gebe ich mich meinen Hobbys hin. Kampfsport
+          hilft mir, Stress abzubauen und fördert meine Zielstrebigkeit. Reisen
+          erweitert meinen Blick und meine Neugier auf neue Kulturen. Familie
+          bedeutet mir viel. Besonders geniesse ich die Zeit mit meinen Nichten.
+          Diese Momente sind meine Quelle der Kraft und Inspiration.
+        </p>
+      </div>
+      <div class="right">
+        <img src="img/abi_picture.png" alt="portrait" />
+        <p>Picture of me in the Estadio Santiago Bernabeu</p>
+      </div>
     </section>
 
     <section class="content" id="experience">
@@ -64,7 +90,11 @@
         trieb mich zur Berufsmaturitätsschule. Danach begann ich an der Berner
         Fachhochschule zu studieren. Ich studiere Vollzeit und arbeite
         gleichzeitig flexibel. Meine Einsätze liegen oft im IT-Bereich. Sie
-        bringen mir wertvolle Erfahrungen und fördern meine Fähigkeiten.
+        bringen mir wertvolle Erfahrungen und fördern meine Fähigkeiten. 
+        
+        Ich habe zusätzlich verschiedene Kurse absolviert, um meine Fähigkeiten über die im Studium angebotenen Module hinaus zu erweitern.
+        Zum Beispiel habe ich eine Zertifizierung für SAP S/4HANA erworben.
+        Ausserdem bin ich nun auch im CPRE von IREB zertifiziert.
       </p>
     </section>
 
@@ -274,6 +304,18 @@
           loaderCircle.style.strokeDashoffset =
             circumference - (percentage / 100) * circumference;
         });
+      });
+
+      // get Burger Icon Container
+      var active = document.getElementById("burger");
+      // add Event Listener Click to Burger Icon Container
+      active.addEventListener("click", function () {
+        //add or remove class "active" to Burger to start animation
+        this.classList.toggle("active");
+        //get menu-container by id
+        var menuShow = document.getElementById("menu");
+        //add or remove class "show" to show or hide menu and start its animations
+        menuShow.classList.toggle("show");
       });
     </script>
   </body>

@@ -1,0 +1,182 @@
+.normal-header {
+  width: 70vw;
+  padding-top: 80px;
+  padding-bottom: 0px;
+  display: flex;
+  align-items: flex-end;
+  margin: 0 auto;
+  transition: opacity 1.5s ease-in-out;
+  z-index: 1000;
+}
+
+.header-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.container {
+  margin: auto;
+}
+
+/* Burger Icon */
+
+#burger {
+  position: relative;
+  margin: auto;
+  height: 30px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out 0.2s;
+}
+
+#burger:hover > .line {
+  background: white;
+}
+
+.line {
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  background: white;
+  transition: background 0.4s ease-in-out, transform 0.4s ease-in-out 0.4s;
+}
+
+.one {
+  transform: translateY(-12px);
+}
+
+.two {
+  transition: background 0.4s ease-in-out, transform 0.4s ease-in-out; /* add delay for reverse animation of second cross bar*/
+}
+
+.three {
+  transform: translateY(12px);
+}
+
+.active {
+  transform: rotate(-315deg);
+  transition: all 0.4s ease-in-out;
+}
+
+.active .line.one,
+.active .line.three {
+  transform: translateY(0);
+  transition: background 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
+
+.active .line.two {
+  transform: rotate(-90deg);
+  transition: background 0.4s ease-in-out, transform 0.4s ease-in-out 0.4s; /* add delay to second cross bar */
+}
+
+/* Menu */
+
+#menu {
+  font-family: "Lato", sans-serif;
+  font-size: 1.5em;
+  position: relative;
+  transform: translateY(-230px);
+  height: 200px;
+  margin: 0 auto;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  transition: transform 0.4s ease-in-out 0.4s, opacity 0.4s ease-in-out 0.2s;
+}
+
+#menu ul {
+  list-style-type: none;
+  position: relative;
+  margin: auto;
+  text-align: center;
+  padding: 0;
+}
+
+#menu ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  display: block;
+  transition: all 0.4s ease;
+}
+
+#menu ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: gray;
+  opacity: 0;
+  transform: translate3d(-100%, 0, 0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+#menu ul li a {
+  overflow: hidden;
+}
+
+#menu ul li a:hover::after,
+#menu ul li a:focus::after {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+#menu ul li {
+  transform: translateY(-15px);
+  transition: transform 0.4s ease-in-out 0.2s, opacity 0.2s ease-in-out 0.2s;
+}
+
+#menu ul li:first-child {
+  transition: transform 0.4s ease-in-out 0.3s;
+}
+
+#menu ul li:nth-child(2) {
+  transition: transform 0.4s ease-in-out 0.2s;
+}
+
+#menu ul li:last-child {
+  transition: transform 0.4s ease-in-out 0.1s;
+}
+
+#menu.show {
+  opacity: 1;
+  transform: translateY(5px);
+  transition: transform 0.4s ease-in-out, opacity 0.2s ease-in-out 0.2s;
+}
+
+#menu.show ul li {
+  transform: translateY(0px);
+}
+
+#menu.show ul li:first-child {
+  transition: transform 0.4s ease-in-out 0.1s;
+}
+
+#menu.show ul li:nth-child(2) {
+  transition: transform 0.4s ease-in-out 0.2s;
+}
+
+#menu.show ul li:last-child {
+  transition: transform 0.4s ease-in-out 0.3s;
+}
+
+.burger-nav {
+  display: none;
+}
+
+#menuToggle input:checked ~ ul {
+  transform: none;
+}
+
+@media screen and (max-width: 768px) {
+  .burger-nav {
+    display: block;
+  }
+  .normal-header {
+    display: none;
+  }
+}
