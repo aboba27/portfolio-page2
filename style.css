@@ -20,9 +20,7 @@ footer {
 
 .skills-container {
   display: flex;
-  min-height: 100vw;
   gap: 40px;
-  max-width: 55vw;
   flex-wrap: wrap;
   align-items: center;
   justify-content: flex-start;
@@ -94,7 +92,6 @@ footer {
   background-color: #333;
   color: #fff;
   text-align: center;
-  display: block;
 }
 
 footer .container {
@@ -196,6 +193,11 @@ footer .container .right .created-by {
   }
 }
 
+@media (max-width: 500px) {
+  .skills-container {
+  }
+}
+
 .content-title {
   font-size: 44px;
   white-space: nowrap; /* Keeps the content on a single line */
@@ -213,4 +215,21 @@ footer .container .right .created-by {
 
 .content-desc {
   margin-top: 0px;
+}
+
+.joke {
+  color: white;
+}
+
+.dad-button {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
 }
