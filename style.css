@@ -32,67 +32,6 @@ header {
   pointer-events: none;
 }
 
-.nav-items {
-  display: flex;
-  gap: 20px;
-  font-size: 20px;
-}
-
-.nav-items a {
-  color: white;
-  text-decoration: none;
-}
-
-.nav-items a:hover {
-  color: gray;
-}
-
-.content {
-  width: 70vw;
-  height: 100vh;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-top: 0px;
-}
-
-.content-title {
-  font-size: 44px;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-.content-desc {
-  margin-top: 0px;
-}
-
-.content {
-  width: 70vw;
-  height: 100vh;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-top: 0px;
-}
-
-.content-title {
-  font-size: 44px;
-  overflow: hidden;
-  white-space: nowrap;
-  animation: typing 3.5s steps(40, end);
-}
-
 /*Skills loader start*/
 
 .skills-container {
@@ -151,7 +90,21 @@ header {
 
 /*Skills loader end*/
 
-/*Footer*/
+.nav-items {
+  display: flex;
+  gap: 20px;
+  font-size: 20px;
+}
+
+.nav-items a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-items a:hover {
+  color: gray;
+}
+
 footer {
   background-color: #333;
   color: #fff;
@@ -205,6 +158,36 @@ footer .container .right {
 
 footer .container .right .created-by {
   margin: 0;
+}
+
+.content {
+  width: 70vw;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 0px;
+}
+
+.content-title {
+  font-size: 44px;
+  overflow: hidden;
+  white-space: nowrap; /* Keeps the content on a single line */
+  animation: typing 3.5s steps(40, end);
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.content-desc {
+  margin-top: 0px;
 }
 
 /*Background*/
